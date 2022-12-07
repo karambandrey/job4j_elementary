@@ -9,11 +9,11 @@ public class MathCalculator {
     }
 
     public static double difAndDeg(double first, double second) {
-        return dif(first, second)
+        return diff(first, second)
                 + deg(first, second);
     }
 
-    public static double allSum(double first, double second) {
+    public static double fourSum(double first, double second) {
         return sumAndMultiply(first, second)
                 + difAndDeg(first, second);
     }
@@ -21,6 +21,6 @@ public class MathCalculator {
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Результат расчета равен: " + difAndDeg(10, 20));
-        System.out.println("Результат расчета равен: " + allSum(10, 20));
+        System.out.println("Результат расчета равен: " + fourSum(10, 20));
     }
 }
